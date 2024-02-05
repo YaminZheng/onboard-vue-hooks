@@ -1,6 +1,6 @@
 {
   "name": "onboard-vue-hooks",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "main": "./dist/onboard-vue-hooks.js",
   "files": [
@@ -26,8 +26,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "build2": "tsc src/**/*",
+    "build": "vite build && vue-tsc",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -42,5 +41,6 @@
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vue-tsc": "^1.8.25"
-  }
+  },
+  "license": "MIT"
 }
