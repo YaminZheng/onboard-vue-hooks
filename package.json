@@ -1,6 +1,6 @@
 {
   "name": "onboard-vue-hooks",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "main": "./dist/onboard-vue-hooks.js",
   "files": [
@@ -13,14 +13,10 @@
     }
   },
   "keywords": [
-    "hooks",
-    "onboard-vue-hooks",
-    "onboard vue hooks",
     "@onboard/vue hooks",
-    "web3 vue hooks",
-    "siwe",
     "siwe message"
   ],
+  "types": "./dist/main.d.ts",
   "repository": {
     "url": "https://github.com/YaminZheng/onboard-vue-hooks.git"
   },
