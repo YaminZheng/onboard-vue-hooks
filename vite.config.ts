@@ -1,21 +1,21 @@
 import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import { nodePolyfills } from "vite-plugin-node-polyfills";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [nodePolyfills({ globals: { Buffer: true } })],
   resolve: {
     alias: {
       "~": "/src",
     },
   },
   build: {
+    modulePreload: { polyfill: false },
     lib: {
       entry: "./src/main.ts",
       formats: ["cjs", "es"],
-      fileName: 'onboard-vue-hooks',
+      fileName: "main",
     },
-    sourcemap: true,
     minify: false,
     rollupOptions: {
       external: [

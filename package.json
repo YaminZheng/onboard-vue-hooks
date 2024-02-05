@@ -1,15 +1,15 @@
 {
   "name": "onboard-vue-hooks",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "type": "module",
-  "main": "./dist/onboard-vue-hooks.js",
+  "main": "./dist/main.js",
   "files": [
     "dist"
   ],
   "exports": {
     ".": {
-      "import": "./dist/onboard-vue-hooks.js",
-      "require": "./dist/onboard-vue-hooks.cjs.js"
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs.js"
     }
   },
   "keywords": [
@@ -30,10 +30,10 @@
     "@web3-onboard/vue": "^2.7.12",
     "ethers": "^6.10.0",
     "siwe": "^2.1.4",
+    "vite-plugin-node-polyfills": "^0.19.0",
     "vue": "^3.3.11"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vue-tsc": "^1.8.25"
